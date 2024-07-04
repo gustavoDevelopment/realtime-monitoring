@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "5cdeeefe-beda-4dac-9fac-1c3f50a03b5e",
+		"name": "realtime-monitoring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15383593",
+		"_collection_link": "https://galactic-rocket-797451.postman.co/workspace/InstaPayment~3ee53f37-4411-4d64-801d-57956236cb26/collection/15383593-5cdeeefe-beda-4dac-9fac-1c3f50a03b5e?action=share&source=collection_link&creator=15383593"
+	},
+	"item": [
+		{
+			"name": "Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/transactions",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/summary",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTransactionsByStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/status/failure",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"status",
+						"failure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TransactionsPorMinuto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/trends",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"trends"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
